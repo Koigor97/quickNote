@@ -1,23 +1,48 @@
 # quickNotes
 
-{Important!  Do not say in this section that this is college assignment.  Talk about what you are trying to accomplish as a software engineer to further your learning.}
+quickNotes is a simple, user-friendly note-taking application designed to help users quickly capture, organize, and manage their thoughts and tasks. This app focuses on providing a distraction-free environment for seamless note-taking and effortless organization.
 
-{Provide a description of your software}
+## Purpose
 
-{Describe your purpose for creating this software.}
+The purpose of creating **quickNotes** is to develop a clean, efficient, and responsive note-taking application that emphasizes simplicity and ease of use. This project allowed me to apply my skills in full-stack development using modern web technologies and improve my understanding of UI/UX design, authentication, and database integration.
 
-{Provide a link to your YouTube demonstration.  It should be a one minute demo of the software running and a walkthrough of the code.}
+## Software Demo
 
-[Software Demo Video](http://youtube.link.goes.here)
+Check out a demonstration of the application in action:  
+[Software Demo Video](https://youtu.be/GFR1duHC3jM)
 
-# Development Environment
+---
 
-{Describe the tools that you used to develop the software}
+## Development Environment
 
-{Describe the programming language that you used}
+### Tools & Technologies Used
+- **Frontend:** React.js, TypeScript, Shadcn UI, TailwindCSS, Framer Motion
+- **Backend:** Node.js, Express.js
+- **Authentication:** Clerk (Google OAuth integration)
+- **Database & Storage:** Appwrite
 
-# Useful Websites
+### Programming Languages
+- **JavaScript (TypeScript)**
+- **HTML/CSS**
 
-{Make a list of websites that you found helpful in this project}
-* [Web Site Name](http://url.link.goes.here)
-* [Web Site Name](http://url.link.goes.here)
+---
+
+## Useful Websites
+
+Here are some resources that were helpful during the development of this project:
+
+- [React Documentation](https://react.dev/)
+- [Tailwind CSS Documentation](https://tailwindcss.com/)
+- [Appwrite Documentation](https://appwrite.io/docs)
+- [Clerk Documentation](https://clerk.dev/docs)
+- [Framer Motion Documentation](https://www.framer.com/motion/)
+
+---
+
+## Developer
+
+**Samuel Koigor Fogbawa Turay**  
+Software Development Student at Brigham Young University - Idaho
+
+Connect with me:
+- [LinkedIn](https://www.linkedin.com/in/samuel-turay1/)
