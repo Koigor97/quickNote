@@ -12,8 +12,10 @@
   "dependencies": {
     "clsx": "^2.1.1",
     "framer-motion": "^11.18.0",
+    "lucide-react": "^0.471.1",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
+    "react-router": "^7.1.1",
     "tailwind-merge": "^2.6.0"
   },
   "devDependencies": {

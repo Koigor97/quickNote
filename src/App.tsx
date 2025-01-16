@@ -1,10 +1,19 @@
+import { BrowserRouter as Router, Routes, Route } from "react-router";
+import MainLayout from "./layouts/MainLayout.tsx";
+import Home from "./pages/Home.tsx";
+import Dashboard from "./pages/Dashboard.tsx";
+
 
 function App() {
-
   return (
-    <div>
-      <h1 className="text-2xl font-heading">A simple, minimalist note-taking app for your thoughts and tasks.</h1>
-    </div>
+    <Router>
+        <MainLayout>
+          <Routes>
+            <Route path="/" element={<Home />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+          </Routes>
+        </MainLayout>
+    </Router>
   )
 }
 
