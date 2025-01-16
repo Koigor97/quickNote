@@ -1,48 +1,50 @@
-# quickNotes
+# React + TypeScript + Vite
 
-quickNotes is a simple, user-friendly note-taking application designed to help users quickly capture, organize, and manage their thoughts and tasks. This app focuses on providing a distraction-free environment for seamless note-taking and effortless organization.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## Purpose
+Currently, two official plugins are available:
 
-The purpose of creating **quickNotes** is to develop a clean, efficient, and responsive note-taking application that emphasizes simplicity and ease of use. This project allowed me to apply my skills in full-stack development using modern web technologies and improve my understanding of UI/UX design, authentication, and database integration.
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Software Demo
+## Expanding the ESLint configuration
 
-Check out a demonstration of the application in action:  
-[Software Demo Video](https://youtu.be/GFR1duHC3jM)
+If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
 
----
+- Configure the top-level `parserOptions` property like this:
 
-## Development Environment
+```js
+export default tseslint.config({
+  languageOptions: {
+    // other options...
+    parserOptions: {
+      project: ['./tsconfig.node.json', './tsconfig.app.json'],
+      tsconfigRootDir: import.meta.dirname,
+    },
+  },
+})
+```
 
-### Tools & Technologies Used
-- **Frontend:** React.js, TypeScript, Shadcn UI, TailwindCSS, Framer Motion
-- **Backend:** Node.js, Express.js
-- **Authentication:** Clerk (Google OAuth integration)
-- **Database & Storage:** Appwrite
+- Replace `tseslint.configs.recommended` to `tseslint.configs.recommendedTypeChecked` or `tseslint.configs.strictTypeChecked`
+- Optionally add `...tseslint.configs.stylisticTypeChecked`
+- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and update the config:
 
-### Programming Languages
-- **JavaScript (TypeScript)**
-- **HTML/CSS**
+```js
+// eslint.config.js
+import react from 'eslint-plugin-react'
 
----
-
-## Useful Websites
-
-Here are some resources that were helpful during the development of this project:
-
-- [React Documentation](https://react.dev/)
-- [Tailwind CSS Documentation](https://tailwindcss.com/)
-- [Appwrite Documentation](https://appwrite.io/docs)
-- [Clerk Documentation](https://clerk.dev/docs)
-- [Framer Motion Documentation](https://www.framer.com/motion/)
-
----
-
-## Developer
-
-**Samuel Koigor Fogbawa Turay**  
-Software Development Student at Brigham Young University - Idaho
-
-Connect with me:
-- [LinkedIn](https://www.linkedin.com/in/samuel-turay1/)
+export default tseslint.config({
+  // Set the react version
+  settings: { react: { version: '18.3' } },
+  plugins: {
+    // Add the react plugin
+    react,
+  },
+  rules: {
+    // other rules...
+    // Enable its recommended rules
+    ...react.configs.recommended.rules,
+    ...react.configs['jsx-runtime'].rules,
+  },
+})
+```
