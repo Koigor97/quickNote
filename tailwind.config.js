@@ -6,6 +6,17 @@ export default {
   ],
   theme: {
     extend: {
+        backgroundImage: {
+            'hero-bg-image': "url('../src/assets/images/bg-image.jpg')"
+        },
+        animation: {
+            border: 'border 4s linear infinite',
+        },
+        keyframes: {
+            border: {
+                to: { '--border-angle': '360deg' },
+            },
+        },
         colors: {
             'text': {
                 50: 'var(--text-50)',
@@ -90,7 +101,9 @@ export default {
             normal: '400',
             bold: '700',
         },
-
+        backdropBlur: {
+            25: '25px',
+        },
     },
   },
   plugins: [],
