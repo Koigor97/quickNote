@@ -1,5 +1,6 @@
 import Logo from "./Logo.tsx";
 import Button from "./Button.tsx";
+import {Link} from "react-router";
 
 
 export default function Nav() {
@@ -8,11 +9,13 @@ export default function Nav() {
             <nav
                 className="flex items-center justify-center gap-5 lg:gap-14">
                 <Logo />
-                <Button
-                    label={'Sign In'}
-                    label2={"Let's ..👉"}
-                    variant={'Hover'}
-                />
+                <Link to="/signIn">
+                    <Button
+                        label={'Sign In'}
+                        label2={"Let's ..👉"}
+                        variant={'Hover'}
+                    />
+                </Link>
             </nav>
         </div>
     )

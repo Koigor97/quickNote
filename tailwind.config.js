@@ -17,6 +17,9 @@ export default {
                 to: { '--border-angle': '360deg' },
             },
         },
+        maxWidth: {
+            'custom-clamp2': 'clamp(300px, 90%, 1500px)'
+        },
         colors: {
             'text': {
                 50: 'var(--text-50)',
