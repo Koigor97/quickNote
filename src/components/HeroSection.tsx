@@ -1,5 +1,6 @@
 import Button from "./Button.tsx";
 import {useMediaQuery} from "../hooks/use-media-query.tsx";
+import {Link} from "react-router";
 
 
 export default function HeroSection() {
@@ -22,11 +23,13 @@ export default function HeroSection() {
                 </p>
             </div>
             <div >
-                <Button
-                    label={"Start Penning Down Notes ✒️️"}
-                    variant={"3D"}
-                    className="mb-5"
-                />
+                <Link to="/signIn">
+                    <Button
+                        label={"Start Penning Down Notes ✒️️"}
+                        variant={"3D"}
+                        className="mb-5"
+                    />
+                </Link>
             </div>
         </div>
     )

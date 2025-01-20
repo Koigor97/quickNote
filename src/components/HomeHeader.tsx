@@ -11,10 +11,3 @@ export default function HomeHeader() {
         </header>
     )
 }
-
-//DEV
-// Hi, I’m Samuel Koigor Fogbawa Turay, a Software Development student at
-// Brigham Young University - Idaho. I’m passionate about creating
-// innovative, user-friendly applications that solve real-world problems.
-//     NoteEase is a reflection of my commitment to delivering clean code and
-// thoughtful design.
