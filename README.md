@@ -9,8 +9,8 @@ The purpose of creating **quickNotes** is to develop a clean, efficient, and res
 ## Software Demo
 
 Check out a demonstration of the application in action:  
-[Software Demo Video](#)  
-*(Replace the `#` with your actual YouTube demo link)*
+[Software Demo Video 1](https://youtu.be/GFR1duHC3jM)  
+[Software Demo Video 2](https://youtu.be/NZrQx1elHsQ)
 
 ---
 
@@ -45,7 +45,7 @@ Here are some resources that were helpful during the development of this project
 Software Development Student at Brigham Young University - Idaho
 
 Connect with me:
-- [LinkedIn](#) *(Insert your LinkedIn URL)*
-- [GitHub](#) *(Insert your GitHub URL)*
+- [LinkedIn](https://linkedin.com/in/samuel-turay1) 
+- [GitHub](https://github.com/Koigor97) 
 
 ---
